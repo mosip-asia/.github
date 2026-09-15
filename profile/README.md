@@ -40,7 +40,7 @@ Our research and engineering initiatives are structured across four autonomous, 
 ### 1. 🏗️ DPI Platform & Disposable Sandbox (`dpi-*`)
 - **Focus:** Automated, disposable cloud-native infrastructure deploying official MOSIP identity microservices and Inji Verifiable Credentials in **<5 minutes** on a single VM at **<$30/month**.
 - **Governance:** Implements Thailand's Electronic Transactions Development Agency (**ETDA**) and Digital Government Development Agency (**DGA**) standards, featuring in-cluster Verifiable Data Registries (`did:web`) and `StatusList2021` bitstring revocation.
-- **Key Repositories:** [`dpi-sandbox`](https://github.com/mosip-asia/dpi-sandbox) *(Public Sandbox Product)*, [`dpi-base`](https://github.com/mosip-asia/dpi-base) *(Operations Hub)*, [`ait-mosip`](https://github.com/mosip-asia/ait-mosip), [`ait-vc`](https://github.com/mosip-asia/ait-vc).
+- **Key Repositories:** [`dpi-sandbox`](https://github.com/mosip-asia/dpi-sandbox) *(Public Sandbox Product)*, [`dpi-base`](https://github.com/mosip-asia/dpi-base) *(Operations Hub)*, [`dpi-trust`](https://github.com/mosip-asia/dpi-trust) *(Trust Framework & VDR)*, [`ait-mosip`](https://github.com/mosip-asia/ait-mosip).
 
 ### 2. 👁️ Biometric R&D & Face-PAD (`facepad-*`)
 - **Focus:** Presentation Attack Detection (**PAD**) adhering to **ISO/IEC 30107-3** and biometric quality assessment to **ISO/IEC 19794-5**.
