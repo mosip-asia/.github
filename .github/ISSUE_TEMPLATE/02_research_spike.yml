@@ -1,0 +1,62 @@
+name: "🔬 Research Spike & Benchmark"
+description: "Time-boxed investigation, scientific experiment, ML benchmark, or comparative study"
+title: "[Research]: <Investigation Topic>"
+labels: ["type:research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🔬 Scientific Research Spike & Empirical Benchmark
+        Use this template for time-boxed technical investigations, ML model evaluations, or comparative literature reviews.
+
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: R&D Pillar
+      description: Select which organizational pillar owns this research.
+      options:
+        - "Pillar 1: DPI Platform & Sizing Benchmarks (dpi-*)"
+        - "Pillar 2: Biometric R&D & ISO 30107-3 Liveness (facepad-*)"
+        - "Pillar 3: AI Assistant & Agentic RAG (ai-*)"
+        - "Pillar 4: Application Protocol Conformance (app-*)"
+    validations:
+      required: true
+
+  - type: input
+    id: timebox
+    attributes:
+      label: Time-Box Estimate
+      description: How much time is allocated to this investigation?
+      placeholder: "e.g., 3 Days / 1 Week"
+    validations:
+      required: true
+
+  - type: textarea
+    id: research_question
+    attributes:
+      label: Research Question & Hypothesis
+      description: What specific question are we testing or measuring?
+      placeholder: State the hypothesis and the key metrics under evaluation (e.g. JVM memory footprint under load, APCER/BPCER error rates).
+    validations:
+      required: true
+
+  - type: textarea
+    id: methodology
+    attributes:
+      label: Methodology & Benchmark Plan
+      description: How will the data be collected, measured, and analyzed?
+      placeholder: Describe test scripts, dataset splits, cloud instances, or analytical tools used.
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverable_artifact
+    attributes:
+      label: Deliverable Artifact via Pull Request
+      description: What concrete artifact will this research produce?
+      value: |
+        - [ ] Comprehensive Markdown Report (committed in `docs/research/` or `docs-*` repository)
+        - [ ] Empirical measurement dataset or benchmark table included
+        - [ ] Actionable architectural recommendations documented
+    validations:
+      required: true

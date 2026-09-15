@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📘 MOSIP Asia Engineering Handbook
+    url: https://github.com/mosip-asia/.github/blob/main/CONTRIBUTING.md
+    about: Read our standard branching, commit conventions, and Definition of Done quality gates.
+  - name: 🏛️ Master System Architecture & Specifications
+    url: https://github.com/mosip-asia/sandbox/tree/main/docs/specs
+    about: Review the active 5-Track engineering specifications and system architecture.
+  - name: 🔒 Report a Security Vulnerability
+    url: mailto:security@mosip.asia
+    about: Report sensitive vulnerabilities or credential exposures directly to leadership.

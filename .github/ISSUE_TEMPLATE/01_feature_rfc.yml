@@ -1,0 +1,67 @@
+name: "🚀 Feature / Architecture RFC"
+description: "Propose a new technical feature, system design, or architectural RFC"
+title: "[RFC]: <Short title>"
+labels: ["type:rfc"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 📐 Technical Architecture RFC & Feature Specification
+        Please ensure your proposal adheres to the [Organization Engineering Handbook](https://github.com/mosip-asia/.github/blob/main/CONTRIBUTING.md).
+
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: R&D Pillar
+      description: Select which organizational pillar owns this proposal.
+      options:
+        - "Pillar 1: DPI Platform & Sandbox (dpi-*)"
+        - "Pillar 2: Biometric R&D & Face-PAD (facepad-*)"
+        - "Pillar 3: AI Assistant & Agents (ai-*)"
+        - "Pillar 4: Digital Applications & Ecosystem (app-*)"
+        - "Governance & Shared Specifications (docs-*)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem Statement & Motivation
+      description: What challenge or requirement does this proposal address?
+      placeholder: Describe the current limitation, user story, or architectural need.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_design
+    attributes:
+      label: Proposed Solution & Technical Design
+      description: Detail the technical approach, components, protocols, and data models.
+      placeholder: Detail architecture, protocols (OIDC, OID4VCI, OID4VP, W3C VC), interfaces, or system changes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specific, testable criteria that must be verified before closing this RFC.
+      value: |
+        - [ ] Criterion 1: 
+        - [ ] Criterion 2: 
+        - [ ] Criterion 3: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (DoD)
+      description: Mandatory quality gates required before closing.
+      value: |
+        - [ ] Code/Spec delivered via Pull Request linking `Closes #<this-issue>`
+        - [ ] Automated smoke tests or unit tests pass with zero regressions
+        - [ ] Architecture documentation updated in respective `docs-*` repository
+        - [ ] Zero secrets, `.env`, or credentials committed
+    validations:
+      required: true

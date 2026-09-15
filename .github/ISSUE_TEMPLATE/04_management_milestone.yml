@@ -1,0 +1,66 @@
+name: "🏆 Management & Grant Milestone"
+description: "Track official grant deliverables, contractor milestone sign-offs, and project releases"
+title: "[Milestone]: <Milestone Name & Target Date>"
+labels: ["type:milestone"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🏛️ Strategic Program Milestone & Deliverable Gate
+        Used by Leadership and Project Leads to track formal grant outcomes, contractor deliverables, and multi-team releases.
+
+  - type: dropdown
+    id: program
+    attributes:
+      label: Strategic Program / Grant
+      description: Select the overarching initiative.
+      options:
+        - "Gates Foundation Ecosystem Grant (Outcome 0)"
+        - "Activity 1.5: Disposable Sandbox Setup"
+        - "Biometrics & Face-PAD Certification"
+        - "AI Assistant R&D Program"
+        - "Commercial / Public Sector Client Project"
+    validations:
+      required: true
+
+  - type: input
+    id: target_date
+    attributes:
+      label: Target Delivery Date
+      description: Milestone deadline (YYYY-MM-DD).
+      placeholder: "e.g., 2026-09-30"
+    validations:
+      required: true
+
+  - type: textarea
+    id: milestone_objective
+    attributes:
+      label: Milestone Objective & Executive Summary
+      description: What business or research capability does this deliverable achieve?
+      placeholder: Executive summary of the milestone goals and impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables_checklist
+    attributes:
+      label: Deliverables & Acceptance Checklist
+      description: Specific deliverables required to sign off this milestone.
+      value: |
+        - [ ] Deliverable 1: 
+        - [ ] Deliverable 2: 
+        - [ ] Deliverable 3: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: sign_off_evidence
+    attributes:
+      label: Verification Proof & Traceability Links
+      description: Links to merged PRs, technical reports, and benchmark evidence.
+      placeholder: |
+        - PR #12: Merged S3 state backend
+        - PR #18: Smoke test output verification log
+        - Report: Deliverable 1 Technical Report PDF
+    validations:
+      required: false
