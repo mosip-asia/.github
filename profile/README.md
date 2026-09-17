@@ -40,7 +40,12 @@ Our research and engineering initiatives are structured across four autonomous, 
 ### 1. 🏗️ DPI Platform & Disposable Sandbox (`dpi-*`)
 - **Focus:** Automated, disposable cloud-native infrastructure deploying official MOSIP identity microservices and Inji Verifiable Credentials in **<5 minutes** on a single VM at **<$30/month**.
 - **Governance:** Implements Thailand's Electronic Transactions Development Agency (**ETDA**) and Digital Government Development Agency (**DGA**) standards, featuring in-cluster Verifiable Data Registries (`did:web`) and `StatusList2021` bitstring revocation.
-- **Key Repositories:** [`dpi-sandbox`](https://github.com/mosip-asia/dpi-sandbox) *(Public Sandbox Product)*, [`dpi-base`](https://github.com/mosip-asia/dpi-base) *(Operations Hub)*, [`dpi-trust`](https://github.com/mosip-asia/dpi-trust) *(Trust Framework & VDR)*, [`ait-mosip`](https://github.com/mosip-asia/ait-mosip).
+- **Sovereign Repositories:**
+  - [`dpi-sandbox`](https://github.com/mosip-asia/dpi-sandbox) — Single-VM automated deployer, smoke test harness & benchmark harness.
+  - [`dpi-base`](https://github.com/mosip-asia/dpi-base) — Platform operations hub, Rancher Kubernetes management & NetBird mesh VPN.
+  - [`dpi-trust`](https://github.com/mosip-asia/dpi-trust) — Agency B: National Trust Authority, VDR `did:web`, schema registry & `StatusList2021`.
+  - [`dpi-nationalid`](https://github.com/mosip-asia/dpi-nationalid) — Agency A: DOPA National ID Credential Issuer (Inji Certify) & Reference Decentralized Verifier.
+  - [`dpi-wallet`](https://github.com/mosip-asia/dpi-wallet) — Agency C: DGA Public Citizen Wallet PWA (Inji Web Wallet) with dynamic SVG cards.
 
 ### 2. 👁️ Biometric R&D & Face-PAD (`facepad-*`)
 - **Focus:** Presentation Attack Detection (**PAD**) adhering to **ISO/IEC 30107-3** and biometric quality assessment to **ISO/IEC 19794-5**.
@@ -52,10 +57,10 @@ Our research and engineering initiatives are structured across four autonomous, 
 - **Key Deliverables:** Retrieval-Augmented Generation (RAG) over MOSIP/Inji engineering specifications, intelligent citizen onboarding helpers, and automated infrastructure diagnostic agents.
 - **Key Repositories:** [`ai-assistant`](https://github.com/mosip-asia/ai-assistant).
 
-### 4. 📱 Digital Applications & Ecosystem (`app-*`)
+### 4. 📱 Digital Applications & Ecosystem (`app-*` & `dpi-wallet`)
 - **Focus:** High-performance web and mobile applications enabling citizens and developers to interact with the DPI ecosystem.
 - **Key Deliverables:** 
-  - **Inji Public Gov Wallet PWA:** Zero-install browser wallet securing private keys in WebCrypto storage.
+  - [**DPI Citizen Web Wallet PWA**](https://github.com/mosip-asia/dpi-wallet): Zero-install browser wallet securing private keys in WebCrypto storage.
   - **Hackathon Gateway:** Multi-tenant project submission portal verifying W3C Developer Passports via OpenID for Verifiable Presentations (**OID4VP**).
   - **Developer Toolkits:** Turnkey starter kits in Python, TypeScript, and Flutter.
 
